@@ -1,32 +1,31 @@
 <?php
 /*
 Plugin Name: Hide Post
-Plugin URI: http://doppos.com/
-Version: 1.0.2
+Plugin URI: https://github.com/emanuelpoletto/hide-post/
 Description: Hide a post everywhere except when accessed directly.
+Version: 1.0.0
 Author: Emanuel Poletto
-Author URI: http://emanuelpoletto.com/
-Text Domain: hide-post
+Author URI: https://emanuelpoletto.com/
 License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: hide-post
 */
 
 /*
-Copyright 2015-2016 Emanuel Poletto / Doppos (email: contato@doppos.com)
+Copyright Emanuel Poletto.
 
-This file is part of Hide Post.
-
-Hide Post is free software: you can redistribute it and/or modify
+This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
+the Free Software Foundation, either version 2 of the License, or
 (at your option) any later version.
 
-Hide Post is distributed in the hope that it will be useful,
+This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with Hide Post.  If not, see <http://www.gnu.org/licenses/>.
+along with this program. If not, see <https://www.gnu.org/licenses/>.
 */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -51,7 +50,7 @@ class Hide_Post {
         add_action( 'save_post', array( $this, 'save_post' ) );
     }
 
-    static function initialize() {
+    public static function initialize() {
         if ( null == self::$instance ) {
             self::$instance = new self;
         }
@@ -59,21 +58,21 @@ class Hide_Post {
 
     public function register_taxonomy() {
         $args = array(
-            'public' => false,
-            'hierarchical' => true,
-            'label' => __( 'Post Visibility', 'hide-post' ),
-            'rewrite' => false,
-            'show_admin_column' => true,
-            'show_in_menu' => false,
-            'show_in_nav_menus' => false,
-            'show_in_quick_edit' => true,
-            'show_tagcloud' => false,
-            'meta_box_cb' => false, // array( $this, 'render_meta_box_content' ),
-            /*'capabilities' => array(
-                'manage_terms' => '', //'manage_categories',
-                'edit_terms' => '', //'manage_categories',
-                'delete_terms' => '', //'manage_categories',
-                'assign_terms' => 'edit_posts',
+            'public'                => false,
+            'hierarchical'          => true,
+            'label'                 => __( 'Post Visibility', 'hide-post' ),
+            'rewrite'               => false,
+            'show_admin_column'     => true,
+            'show_in_menu'          => false,
+            'show_in_nav_menus'     => false,
+            'show_in_quick_edit'    => true,
+            'show_tagcloud'         => false,
+            'meta_box_cb'           => false, // array( $this, 'render_meta_box_content' ),
+            /*'capabilities'        => array(
+                'manage_terms'  => '', //'manage_categories',
+                'edit_terms'    => '', //'manage_categories',
+                'delete_terms'  => '', //'manage_categories',
+                'assign_terms'  => 'edit_posts',
             ),*/
         );
 
