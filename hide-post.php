@@ -2,7 +2,7 @@
 /*
 Plugin Name: Hide Post
 Plugin URI: http://doppos.com/
-Version: 1.0.1
+Version: 1.0.2
 Description: Hide a post everywhere except when accessed directly.
 Author: Emanuel Poletto
 Author URI: http://emanuelpoletto.com/
