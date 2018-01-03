@@ -1,12 +1,28 @@
 # Hide Post
 
 Contributors: [@emanuelpoletto](https://profiles.wordpress.org/emanuelpoletto) on WordPress.org
+<<<<<<< HEAD
 Donate link: [Click here to donate via PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3S9RPEFELV66Q)
 Tags: hide, post, simple
 Requires at least: 3.0.1
 Tested up to: 4.5.3
 Stable tag: 1.0.2
 License: GPLv2 or later
+=======
+
+Donate link: [Click here to donate via PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3S9RPEFELV66Q)
+
+Tags: hide, post, simple
+
+Requires at least: 3.0.1
+
+Tested up to: 4.5.3
+
+Stable tag: 1.0.2
+
+License: GPLv2 or later
+
+>>>>>>> Create README and CHANGELOG files.
 License URI: [http://www.gnu.org/licenses/gpl-2.0.html]
 
 ## Description
