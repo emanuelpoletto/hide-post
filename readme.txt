@@ -1,10 +1,10 @@
-=== Plugin Name ===
+=== Hide Post ===
 Contributors: emanuelpoletto
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3S9RPEFELV66Q
 Tags: hide, post, simple
 Requires at least: 3.0.1
 Tested up to: 4.5.2
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,6 +22,9 @@ This section describes how to install the plugin and get it working.
 2. Activate the plugin through the 'Plugins' screen in WordPress
 
 == Changelog ==
+
+= 1.0.1 =
+* Add plugin name in the readme.txt file.
 
 = 1.0.0 =
 * First release.
